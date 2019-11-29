@@ -5,7 +5,11 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "react-scripts build",
+    "homepage": "https://cfw25.github.io/SimpleBlogCards/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -23,6 +27,7 @@
     "gatsby-remark-images": "^3.1.34",
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.3.6",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
